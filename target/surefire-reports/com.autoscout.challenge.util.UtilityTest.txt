@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.autoscout.challenge.util.UtilityTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.autoscout.challenge.util.UtilityTest

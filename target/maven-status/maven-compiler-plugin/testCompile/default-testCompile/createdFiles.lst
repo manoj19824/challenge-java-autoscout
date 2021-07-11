@@ -1,0 +1,4 @@
+com/autoscout/challenge/repository/ListingApiRepositoryTest.class
+com/autoscout/challenge/util/UtilityTest.class
+com/autoscout/challenge/controller/ListingApiControllerTest.class
+com/autoscout/challenge/service/ListingApiServiceTest.class
