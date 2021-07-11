@@ -25,6 +25,7 @@ import java.util.Map;
 @Tag(name = "task", description = "Auto-scout listing API")
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class ListingApiController {
 
     private final Logger logger = LoggerFactory.getLogger(ListingApiController.class);
@@ -65,7 +66,7 @@ public class ListingApiController {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new ResponseMessage(message));
     }
 
-    @GetMapping("/reports/avg_listing_selling_price")
+    @GetMapping("/reports/avg-listing-selling-price")
     public ResponseEntity<Map<SellerType, String>> getAvgListingPrice() {
         try {
             Map<SellerType, String> avgListingPrice = apiService.getAvgListingPrice();
@@ -93,7 +94,7 @@ public class ListingApiController {
         }
     }
 
-    @GetMapping("/reports/contact-listings-per-month")
+    @GetMapping("/reports/contact-listings")
     public ResponseEntity<Map<YearMonth,List<ContactListingReport>>> getContactListing() {
         try {
             Map<YearMonth,List<ContactListingReport>> contactListing = apiService.getContactListing();
