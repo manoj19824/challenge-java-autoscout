@@ -46,10 +46,10 @@ GET
 ​/api​/reports​/distribution
 
 GET
-​/api​/reports​/contact-listings-per-month
+​/api​/reports​/contact-listings
 
 GET
-​/api​/reports​/avg_listing_selling_price
+​/api​/reports​/reports/avg-listing-selling-price
 
 
 The test cases covered for the controller and service layer. But we can write more tests cases for better coverage.
