@@ -5,7 +5,7 @@ Technologies Used :
 2. Spring Boot and microservice.
 3. Docker.
 4. OpenApi Specification for the endpoints.
-6. In memory H2 based solution with offline storage.
+6. In memory H2 for storage.
 7. Spring data JPA.
 
 How to build and run the application :
@@ -22,7 +22,11 @@ http://localhost:8080/h2/
 
 5.The application is fully dockerized and you can run the below commands to create and execute the container.
 
+Creating image
+
 create image - docker build -t manoj/challenge-java-autoscout-docker . 
+
+Running the docker
 run container - docker run -p 8080:8080 manoj/challenge-java-autoscout-docker
 
 For testing upload the swagger ui and upload the csv files listing and contacts separately.
@@ -34,21 +38,25 @@ These are the end points for accessing and testing the reports.
 POST
 ​/api​/csv​/upload
 Upload multi part file
+
 GET
 ​/api​/reports​/most-contacted-avg-price
+
 GET
 ​/api​/reports​/distribution
+
 GET
 ​/api​/reports​/contact-listings-per-month
+
 GET
 ​/api​/reports​/avg_listing_selling_price
 
 
-The test cases covered for the controller and service layer. But we can write more tests cases.
+The test cases covered for the controller and service layer. But we can write more tests cases for better coverage.
 
 As busy with my personal and professional commitments not have much time for writing 100% test cases.
 
-I have not written enough test but just given some test case for illustration purpose.
+
 
 
 
